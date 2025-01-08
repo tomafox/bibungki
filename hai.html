@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buka aku plis</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Halaman 1 -->
+    <div id="page1" class="page">
+        <h1><img src="kucing5.gif" alt="kucing5" style="width: 300px; height: auto;"><br>
+        Hai ganteng, boleh kenalan namanya siapa?</h1>
+        <input type="text" id="nameInput" placeholder="Masukkan nama kamu yaa">
+        <button onclick="goToPage2()">Submit</button>
+    </div>
+
+    <!-- Halaman 2 -->
+    <div id="page2" class="page hidden">
+        <h1><img src="kucingkedip.gif" alt="kucingkedip" style="width: 300px; height: auto;"><br> Hihi haloo, <span id="userNameDisplay"></span> ganteng, buka amplop ini dong!</h1>
+        <div id="envelope" onclick="openLetter()">✉️</div>
+    </div>
+
+    <!-- Halaman 3 -->
+    <div id="page3" class="page hidden">
+        <h1 id="letterGreeting">Surat Permintaan Maaf></h1>
+        <p>Maaf ya <span id="userNameDisplay"></span>, aku udah buat kamu sedih, kesel, sebel, marah. Pasti kamu kangen aku yaa, tapi aku malah main ML sama temen-temen aku. Maaf ya sayangku aku ga peka sama kamu. Aku kangen banget sama kamu. Jadi tolong maafin aku yaa.</p>
+        <img src="kucingjenggot.gif" alt="kucingjenggot" style="width: 300px; height: auto;">
+        <br> 
+        (Ini aku sampe jenggotan karena merasa bersalah)
+        <button onclick="goToPage4()">Lanjut</button>
+    </div>
+
+    <!-- Halaman 4 -->
+    <div id="page4" class="page hidden">
+        <h1><span id="userNameDisplay"></span> mau maafin aku kan?</h1>
+        <button onclick="forgive()">mau donggg</button>
+        <button id="noButton" onclick="transformNoButton()">gamau</button>
+    </div>
+
+    <!-- Halaman 5 -->
+    <div id="page5" class="page hidden">
+        <h1>yeyy, makasih ya sayang udah mau maafin akuu. AKU SAYANG KAMUUU, ILOFYUUUUUU. Jangan lupa chat aku yaa </h1>
+        <img src="kucingjoget.gif" alt="kucingjoget" style="width: 300px; height: auto;">
+        <br>
+        <button onclick="redirectToLine()">Chat aku pliss</button>
+    </div>
+
+    <script src="app2.js"></script>
+</body>
+</html>

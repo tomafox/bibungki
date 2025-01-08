@@ -1,0 +1,73 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#AEEEEE;
+}
+
+.page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page.hidden {
+    display: none;
+}
+
+.page:not(.hidden) {
+    display: flex;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Memperbesar kolom input */
+input[type="text"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #365474; /* Warna border input */
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px; /* Menambahkan jarak antara input dan tombol */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tombol submit */
+button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #FF6347;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #FF4500;
+    transform: scale(1.1);
+}
+
+
+
+#envelope {
+    font-size: 50px;
+    cursor: pointer;
+    margin: 20px 0;
+}
